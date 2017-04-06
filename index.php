@@ -45,7 +45,7 @@ if (CheckArrayKeys($_GET, array('action','x','y')) and $_GET['action'] == 'books
     if ($data[0]['ticket'] == $context->ticket['id']) {
         echo(json_encode('success'));
     } else {
-        echo(json_encode('failed')); 
+        echo(json_encode('failed'));
     }
     exit;
 }
@@ -56,7 +56,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         if ($data[0]['ticket'] == null) {
             $database->Query('bookSeat', array($_POST['seat_number'], $_POST['seat_row'], $context->ticket['id'], date('Y-m-d H:i:s')));
         } else {
-            
+
         }
     } elseif (isset($_POST['submitlogin'])) {
         $data = $database->Query('getTicket', array($_POST['code'], $_POST['password']));
@@ -126,11 +126,11 @@ $inlineCSS .= '.seat { border: 1px solid #000000; }'."\n";
 <html>
 <head>
     <meta charset="utf8">
-    <title>Plassresservering</title> 
+    <title>Plassresservering FSFF-LAN</title>
     <link rel="stylesheet" type="text/css" href="theme.css"/>
     <!--<script src="jquery-2.0.3.min.js"></script>-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Include meta tag to ensure proper rendering and touch zooming 
+    <!-- Include meta tag to ensure proper rendering and touch zooming
     <meta name="viewport" content="width=device-width, initial-scale=1">-->
     <link rel="stylesheet" href="jquery-ui.min.css">
     <script src="jquery.js"></script>
@@ -145,6 +145,7 @@ $inlineCSS .= '.seat { border: 1px solid #000000; }'."\n";
     </style>
 </head>
 <body>
+<div id="wrapper">
     <table>
         <tr>
             <td width="75%">
@@ -177,14 +178,14 @@ $inlineCSS .= '.seat { border: 1px solid #000000; }'."\n";
                                         <input type="submit" class="ui-button ui-widget ui-corner-all" name="submitunbook" value="Fjern plass">
                                     <?php endif; ?>
 
-                                </form> 
+                                </form>
                                 <?php else: ?>
                                 <p><b>Logg inn for å velge plass</b></p>
                                 <form id="login_form" method="POST">
                                     <p>Billettnummer:</p><input class="ui-widget ui-widget-content ui-corner-all" type="text" name="code"><br>
                                     <p>Passord:</p><input class="ui-widget ui-widget-content ui-corner-all" type="password" name="password"><br>
                                     <input type="submit" class="ui-button ui-widget ui-corner-all" name="submitlogin" value="Login">
-                                </form> 
+                                </form>
                                 <?php endif; ?>
                             </div>
                             <div id="book_view">
@@ -214,6 +215,7 @@ $inlineCSS .= '.seat { border: 1px solid #000000; }'."\n";
             </td>
         </tr>
     </table>
+</div>
 </body>
 </html>
 
