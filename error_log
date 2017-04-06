@@ -1,0 +1,6 @@
+[06-Apr-2017 13:12:58 Europe/Berlin] PHP Warning:  mysqli::__construct(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/opascree/public_html/fsfflan/lib/dal.php on line 23
+[06-Apr-2017 13:12:58 Europe/Berlin] PHP Warning:  mysqli::__construct(): (HY000/2002): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/opascree/public_html/fsfflan/lib/dal.php on line 23
+[06-Apr-2017 13:13:45 Europe/Berlin] PHP Warning:  mysqli::__construct(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/opascree/public_html/fsfflan/lib/dal.php on line 23
+[06-Apr-2017 13:13:45 Europe/Berlin] PHP Warning:  mysqli::__construct(): (HY000/2002): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/opascree/public_html/fsfflan/lib/dal.php on line 23
+[06-Apr-2017 13:13:48 Europe/Berlin] PHP Warning:  mysqli::__construct(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/opascree/public_html/fsfflan/lib/dal.php on line 23
+[06-Apr-2017 13:13:48 Europe/Berlin] PHP Warning:  mysqli::__construct(): (HY000/2002): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/opascree/public_html/fsfflan/lib/dal.php on line 23
