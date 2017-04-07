@@ -145,8 +145,8 @@ $inlineCSS .= '.seat { border: 1px solid #000000; }'."\n";
     </style>
 </head>
 <body>
-<H1>Plassresservering FSFF-LAN</H1>
 <div id="wrapper">
+    <H1>Plassresservering FSFF-LAN</H1>
     <table>
         <tr>
             <td width="75%">
